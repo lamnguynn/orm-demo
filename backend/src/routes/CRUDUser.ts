@@ -31,7 +31,7 @@ router.post('/api/name', async (req, res) => {
         last_name: lastName,
         email: email,
         age: age,
-        enrolled: enrolled
+        isEnrolled: enrolled
     })
 
     //Save to database

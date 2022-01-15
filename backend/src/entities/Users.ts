@@ -23,7 +23,7 @@ export class Users extends BaseEntity{
     @Column({
         default: false
     })
-    enrolled: boolean
+    isEnrolled: boolean
 
     @CreateDateColumn()
     created_at: Date

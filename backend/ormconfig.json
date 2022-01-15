@@ -1,12 +1,15 @@
-{
-    "name": "testORM",
+[
+    {
+    "name": "development",
     "type": "postgres",
     "host": "localhost",
     "port": 5432,
     "username": "lamnguyen",
     "password": "",
     "database": "lamnguyen",
-    "entities": ["src/entities/Users.ts"],
+    "entities": ["src/entities/**/*.ts"],
+    "migrations": ["src/migration/**/*.ts"],
     "logging": true,
     "synchronize": false
-}
+    }
+]
