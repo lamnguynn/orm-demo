@@ -1,0 +1,31 @@
+.container{
+    background-color: white;
+    height: 200px;
+    width: 50%;
+    position: relative;
+    left: 25%;
+    border-radius: 20px;
+}
+
+.editEmployeeContainer{
+    position: absolute;
+    bottom: 0;
+    left: 55%;
+    border-bottom-right-radius: 20px;
+    text-align: right;
+}
+
+.newEmployeeTextEntry{
+    width: 150px;
+    height: auto;
+}
+
+.removeEmployeeTextEntry{
+    width: 150px;
+    height: auto;
+}
+
+.header{
+    font-size: 32px;
+    background-color: silver;
+}
