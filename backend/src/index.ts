@@ -1,5 +1,4 @@
 import { createConnection } from 'typeorm'
-import { Users } from './entities/Users'
 import express from 'express'
 import { CRUDUserRoute } from './routes/CRUDUser';
 
@@ -10,17 +9,7 @@ const PORT = 3000;
 const main = async() => {
     //Attempt to connect to the database
     try{
-        await createConnection({
-            type: "postgres",
-            host: "localhost",
-            port: 5432,
-            username: 'lamnguyen',
-            password: undefined,
-            database: 'lamnguyen',
-            entities: [Users],
-            logging: true,
-            synchronize: true
-        })
+        await createConnection()
 
         //If successful, display message
         console.log("Connected To Postgres")
