@@ -6,7 +6,7 @@ const router = express.Router();
 /* 
     Writing to the API (POST/CREATE) 
 */
-router.post('/api/name', async (req, res) => {
+router.post('/api/name/', async (req, res) => {
     //Get the request and break it up
     const {
         firstName,
@@ -66,7 +66,7 @@ router.delete('/api/name/:clientId', async (req, res) => {
 /* 
     Fetching data from the API (GET/READ)
 */
-router.get('/api/name', async (req, res) => {
+router.get('/api/name/', async (req, res) => {
     const userData = await Users.find();
 
     res.status(200).send(userData)

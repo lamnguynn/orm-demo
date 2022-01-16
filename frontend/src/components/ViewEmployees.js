@@ -1,12 +1,12 @@
 import './css/ViewEmployees.css';
-import React, {Component} from 'react';
+import React from 'react';
 
 function AddNewEmployee() {
     //Get text from user
     const text = document.getElementsByClassName('newEmployeeTextEntry')[0].value
     
     //Error handling
-    if(text == ""){ return; }
+    if(text === ""){ return; }
 
     //Make a JSON Object
     const firstName = text.substring(0, text.indexOf(" "));
@@ -36,7 +36,7 @@ function RemoveEmployee(){
     const text = document.getElementsByClassName('removeEmployeeTextEntry')[0].value
 
     //Error handling
-    if(text == ""){ 
+    if(text === ""){ 
         return; 
     }
 
@@ -57,7 +57,7 @@ function RemoveEmployee(){
 async function RetrieveEmployees(){
     //Get the response
     console.log("Retrieving Data...")
-    const resp = await fetch('/api/name/');
+    const resp = await fetch('http://localhost:3000/api/name');
     const body = await resp.json();
 
     //Error handling 
