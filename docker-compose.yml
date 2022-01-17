@@ -1,17 +1,18 @@
-version: '3'
+version: '3.8'
+
 services:
   react-app:
-    image: employeeapp
+    build: 
+      context: ./frontend
     stdin_open: true
     ports:
       - "3001:3001"
-    depends_on:
-      - api-server
     networks:
       - emplyApp
     
   api-server:
-    image: employeebackend
+    build: 
+      context: ./backend
     ports:
       - "3000:3000"
     networks:
@@ -28,6 +29,15 @@ services:
     environment:
        POSTGRES_PASSWORD: password
        POSTGRES_USER: postgres
+  
+  nginx:
+    restart: always
+    build:
+      context: ./nginx
+    ports:
+      - "80:80"
+    networks:
+      - emplyApp
 
 networks:
   emplyApp:
