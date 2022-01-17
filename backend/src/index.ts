@@ -1,5 +1,6 @@
 import { createConnection, getConnection, getConnectionManager } from 'typeorm'
 import express from 'express'
+import bodyParser from 'body-parser'
 import { CRUDUserRoute } from './routes/CRUDUser';
 
 const app = express()
