@@ -8,5 +8,5 @@ Tech Stack
 - Postgres
 - Node
 - React
-
+- NGINX
 
