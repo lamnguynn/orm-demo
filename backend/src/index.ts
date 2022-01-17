@@ -15,6 +15,7 @@ const main = async() => {
 
     //Add retry logic 
     let retries = 5;
+    
     while(retries){
         try{
             await createConnection();

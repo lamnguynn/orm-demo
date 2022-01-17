@@ -10,6 +10,6 @@
         "entities": ["src/entities/**/*.ts"],
         "migrations": ["src/migration/**/*.ts"],
         "logging": true,
-        "synchronize": true
+        "synchronize": false
     }
 ]
