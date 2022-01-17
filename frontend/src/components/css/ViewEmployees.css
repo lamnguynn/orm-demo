@@ -1,12 +1,13 @@
 .container{
     background-color: white;
     height: 200px;
-    width: 50%;
+    width: 60%;
     position: relative;
-    left: 25%;
+    left: 20%;
     border-radius: 20px;
+    margin-top: 5%;
 }
-
+ 
 .editEmployeeContainer{
     position: absolute;
     bottom: 0;
@@ -16,16 +17,19 @@
 }
 
 .newEmployeeTextEntry{
-    width: 150px;
+    width: 100px;
     height: auto;
 }
 
 .removeEmployeeTextEntry{
-    width: 150px;
+    width: 100px;
     height: auto;
 }
 
 .header{
     font-size: 32px;
-    background-color: silver;
+    padding-left: 20px;
+    background-color: #299BCB;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }

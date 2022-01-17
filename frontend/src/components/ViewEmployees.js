@@ -108,8 +108,8 @@ class ViewEmployee extends React.Component {
             </div>
 
 
-            <p style={{color: 'black', fontSize: 25}}> Names: </p>
-            <p> {employeeNames.toString()} </p>
+            <p style={{ color: 'black', fontSize: 25, paddingLeft: 20 }}> Names: </p>
+            <p style={{ paddingLeft: 20 }}> {employeeNames.toString()} </p>
 
         </div>);
     }
