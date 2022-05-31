@@ -1,6 +1,6 @@
 # orm-demo
 
-Practice for Web Development for BMW Project
+Full stack project to experiment with
 
 Tech Stack
 - Express
